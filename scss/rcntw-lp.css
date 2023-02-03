@@ -14,6 +14,8 @@ html {
 #landingA p,
 #landingB p {
   color: #000;
+  line-height: 150%;
+  font-size: 16px;
 }
 #landingA .cta,
 #landingB .cta {
@@ -54,7 +56,7 @@ html {
   /* same as #navbar height */
   display: flex;
   position: relative;
-  background-image: url("../images/banner/desktop/header-vn.jpg");
+  background-image: url("../images/banner/desktop/header-tw.jpg");
   background-size: cover;
   align-items: center;
   justify-content: center;
@@ -104,12 +106,17 @@ html {
 }
 #landingA .intro .intro-content .left,
 #landingB .intro .intro-content .left {
-  width: 600px;
+  width: 45%;
   padding: 2rem 4rem 2rem 0;
+}
+#landingA .intro .intro-content .left img,
+#landingB .intro .intro-content .left img {
+  width: 100%;
+  height: auto;
 }
 #landingA .intro .intro-content .right,
 #landingB .intro .intro-content .right {
-  width: auto;
+  width: 55%;
 }
 #landingA .why-us,
 #landingB .why-us {
@@ -289,12 +296,27 @@ html {
 }
 #landingA .recruiter .info .left,
 #landingB .recruiter .info .left {
-  width: 500px;
+  width: 40%;
+  order: 2;
+}
+#landingA .recruiter .info .left img,
+#landingB .recruiter .info .left img {
+  width: 100%;
+  height: auto;
 }
 #landingA .recruiter .info .right,
 #landingB .recruiter .info .right {
-  width: auto;
-  padding-left: 3rem;
+  width: 60%;
+  padding-right: 3rem;
+}
+#landingA .recruiter .info .right .name,
+#landingB .recruiter .info .right .name {
+  font-weight: 500;
+  font-size: 1.05em;
+}
+#landingA .recruiter .info .right .name .position,
+#landingB .recruiter .info .right .name .position {
+  font-size: 1em;
 }
 #landingA .recruiter .info .right p:first-child,
 #landingB .recruiter .info .right p:first-child {
@@ -353,6 +375,43 @@ html {
 #landingB .step .step-list .angle img {
   width: 30px;
 }
+#landingA .faq,
+#landingB .faq {
+  background: transparent;
+}
+#landingA .faq .faq-container .item,
+#landingB .faq .faq-container .item {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  text-align: left;
+  border-bottom: 1px solid #adadad;
+}
+#landingA .faq .faq-container .item > *,
+#landingB .faq .faq-container .item > * {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+#landingA .faq .faq-container .item .question,
+#landingB .faq .faq-container .item .question {
+  color: #1f2b62;
+  font-size: 1em;
+  font-weight: 700;
+}
+#landingA .faq .faq-container .item .answer,
+#landingB .faq .faq-container .item .answer {
+  color: #000;
+  font-size: 1em;
+}
+#landingA .faq .faq-container .item:last-child,
+#landingB .faq .faq-container .item:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+#landingA .form,
+#landingB .form {
+  background: #fafafa;
+}
 #landingA .form .vn-form,
 #landingB .form .vn-form {
   padding: 2rem 0;
@@ -394,39 +453,6 @@ html {
 #landingB .form .vn-form .ui.form .btn .cta {
   padding: 1rem 2rem;
 }
-#landingA .faq,
-#landingB .faq {
-  background: #fafafa;
-}
-#landingA .faq .faq-container .item,
-#landingB .faq .faq-container .item {
-  display: flex;
-  flex-direction: column;
-  padding: 1.5rem 0;
-  text-align: left;
-  border-bottom: 1px solid #adadad;
-}
-#landingA .faq .faq-container .item > *,
-#landingB .faq .faq-container .item > * {
-  margin-bottom: 0.5rem;
-  width: 100%;
-}
-#landingA .faq .faq-container .item .question,
-#landingB .faq .faq-container .item .question {
-  color: #1f2b62;
-  font-size: 1em;
-  font-weight: 700;
-}
-#landingA .faq .faq-container .item .answer,
-#landingB .faq .faq-container .item .answer {
-  color: #000;
-  font-size: 1em;
-}
-#landingA .faq .faq-container .item:last-child,
-#landingB .faq .faq-container .item:last-child {
-  border-bottom: 0;
-  margin-bottom: 0;
-}
 
 /* Landing B */
 #landingB .banner {
@@ -436,7 +462,7 @@ html {
   display: flex;
   flex-direction: row;
   position: relative;
-  background-image: url("../images/banner/desktop/header-vn.jpg");
+  background-image: url("../images/banner/desktop/header-tw.jpg");
   background-size: cover;
   align-items: center;
   padding: 1rem 2rem;
@@ -446,7 +472,7 @@ html {
   position: absolute;
   content: " ";
   background: black;
-  opacity: 0.6;
+  opacity: 0.5;
   width: 100%;
   height: 100%;
   top: 0;
@@ -557,7 +583,12 @@ html {
   #landingA .intro .intro-content .left,
 #landingB .intro .intro-content .left {
     width: 100%;
-    padding: 1rem 1rem;
+    padding: 0;
+  }
+  #landingA .intro .intro-content .right,
+#landingB .intro .intro-content .right {
+    width: 100%;
+    padding: 1rem 0;
   }
   #landingA .why-us .why-content,
 #landingB .why-us .why-content {
@@ -645,11 +676,18 @@ html {
   #landingA .recruiter .info .left,
 #landingB .recruiter .info .left {
     width: 100%;
-    padding: 0 2rem 2rem 2rem;
   }
   #landingA .recruiter .info .right,
 #landingB .recruiter .info .right {
+    width: 100%;
     padding-left: 0;
+    padding: 1rem 0;
+    order: 2;
+  }
+  #landingA .recruiter .info .right .name,
+#landingB .recruiter .info .right .name {
+    text-align: center;
+    font-size: 16px;
   }
   #landingA .step .step-list,
 #landingB .step .step-list {
@@ -734,7 +772,7 @@ html {
   #landingB .banner {
     height: auto;
     flex-direction: column;
-    background-image: url("../images/banner/mobile/header-vn.jpg");
+    background-image: url("../images/banner/mobile/header-tw.jpg");
     justify-content: center;
     padding: 3rem 20px;
   }
