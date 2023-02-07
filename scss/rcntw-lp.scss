@@ -231,7 +231,6 @@ html {
 
       .left {
         width: 40%;
-        order: 2;
         img {
           width: 100%;
           height: auto;
@@ -240,7 +239,7 @@ html {
 
       .right {
         width: 60%;
-        padding-right: 3rem;
+        padding-left: 3rem;
         .name {
           font-weight: 500;
           font-size: 1.05em;

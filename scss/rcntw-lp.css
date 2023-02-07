@@ -297,7 +297,6 @@ html {
 #landingA .recruiter .info .left,
 #landingB .recruiter .info .left {
   width: 40%;
-  order: 2;
 }
 #landingA .recruiter .info .left img,
 #landingB .recruiter .info .left img {
@@ -307,7 +306,7 @@ html {
 #landingA .recruiter .info .right,
 #landingB .recruiter .info .right {
   width: 60%;
-  padding-right: 3rem;
+  padding-left: 3rem;
 }
 #landingA .recruiter .info .right .name,
 #landingB .recruiter .info .right .name {
